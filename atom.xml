@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.moxi.ml</id>
     <title>Xi‘s Notes</title>
-    <updated>2021-07-24T10:02:34.378Z</updated>
+    <updated>2021-07-24T10:05:04.766Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.moxi.ml"/>
     <link rel="self" href="https://www.moxi.ml/atom.xml"/>
@@ -34,7 +34,7 @@
 <p>  因此我自己设计了两套图标包，其中预览效果如下：<br>
 <img src="https://www.moxi.ml/post-images/1627117092567.png" alt="" loading="lazy"></p>
 <h3 id="左侧图标名为greyline右侧图标名为color">*左侧图标名为GreyLine，右侧图标名为Color</h3>
-<p>*两款图标均为个人原创设计，照顾到米板2的2k屏幕，大图标分辨率为256*256，小图标分辨率为96*96，相比rEFInd自带的图标要更加清晰。</p>
+<p>*两款图标均为个人原创设计，照顾到米板2的2k屏幕，图标分辨率大小翻倍，因此相比rEFInd自带的图标要更加清晰。</p>
 <h1 id="食用方法">食用方法</h1>
 <p>  假如你和我一样采用的是(@果壳里的星辰)的刷机包，可以采用我制作的卡刷包，首先下载你喜欢的美化包：下载地址：<a href="https://moxiaoxi233.lanzoui.com/iW2gvrsxnhi">GreyLine卡刷包</a>或<a href="https://moxiaoxi233.lanzoui.com/i5rI8rsxnvc">Color卡刷包</a>，然后进入安卓TWRP（Recovery），卡刷对应的zip包文件，再重启平板即完成修改。<br>
   假如你采用的是早期其他人制作的双系统包，如游戏尘间发布的双系统包，则可能相对麻烦，进入Windows PE，打开DiskGenius软件，找到对应的EFI分区，EFI/boot/icons，将<a href="https://moxiaoxi233.lanzoui.com/irQcDrsxjzc">GreyLine图标包</a>或<a href="https://moxiaoxi233.lanzoui.com/isLn5rsxhlg">Color图标包</a>解压，将图片全部复制到该目录即可。随后返回EFI/boot目录，用文本编辑器打开refind.conf，在文档的末尾处增加如下语句：</p>
