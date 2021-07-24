@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.moxi.ml</id>
     <title>Xi‘s Notes</title>
-    <updated>2021-07-24T09:36:31.560Z</updated>
+    <updated>2021-07-24T09:54:49.746Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.moxi.ml"/>
     <link rel="self" href="https://www.moxi.ml/atom.xml"/>
@@ -16,14 +16,13 @@
         <link href="https://www.moxi.ml/post/Vol_01_MiPad2_PowerOn/">
         </link>
         <updated>2021-07-24T05:32:45.000Z</updated>
-        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.moxi.ml/post-images/1627104776266.png" alt="" loading="lazy"></figure>
-<h1 id="前言">前言</h1>
+        <summary type="html"><![CDATA[<h1 id="前言">前言</h1>
 <p>  将砖掉了的平板给救了回来，于是又开始了折腾的不归路......正好早就沉迷于各种数码的美化中，索性来折腾一下我的小米平板2。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.moxi.ml/post-images/1627104776266.png" alt="" loading="lazy"></figure>
-<h1 id="前言">前言</h1>
+        <content type="html"><![CDATA[<h1 id="前言">前言</h1>
 <p>  将砖掉了的平板给救了回来，于是又开始了折腾的不归路......正好早就沉迷于各种数码的美化中，索性来折腾一下我的小米平板2。</p>
 <!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://www.moxi.ml/post-images/1627104776266.png" alt="" loading="lazy"></figure>
 <h1 id="双系统的安装">双系统的安装</h1>
 <p>  采用了 (@果壳里的星辰) 公众号制作的双系统刷机包，这里强烈推荐使用他制作的刷机包，相较于比较过时的那些早期双系统作品，这份方案更完善，以及解决了许多问题。<br>
   这里我们选择Miui+Win的组合方案，因为个人比较依赖小米账户的云同步功能(´･ω･`)</p>
@@ -42,6 +41,7 @@
 <pre><code>selection_big \EFI\boot\icons\selection_big.png
 selection_small \EFI\boot\icons\selection_small.png
 </code></pre>
+<p>  最后重启平板即可</p>
 <h3 id="注两种双系统包下载的文件是不同的注意不要混淆-如有疑问或更多建议欢迎联系我~">*注：两种双系统包下载的文件是不同的，注意不要混淆。如有疑问或更多建议，欢迎联系我～</h3>
 <p>  到此即全文结束，享受焕然一新的系统引导界面吧！</p>
 ]]></content>
