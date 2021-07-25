@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.moxi.ml</id>
     <title>Xi‘s Notes</title>
-    <updated>2021-07-24T10:18:49.448Z</updated>
+    <updated>2021-07-25T10:57:26.308Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.moxi.ml"/>
     <link rel="self" href="https://www.moxi.ml/atom.xml"/>
@@ -10,6 +10,54 @@
     <logo>https://www.moxi.ml/images/avatar.png</logo>
     <icon>https://www.moxi.ml/favicon.ico</icon>
     <rights>All rights reserved 2021, Xi‘s Notes</rights>
+    <entry>
+        <title type="html"><![CDATA[Vol.02 图文带你手把手制作MiPad2救砖神器]]></title>
+        <id>https://www.moxi.ml/post/vol02-di-cheng-ben-shou-ba-shou-zhi-zuo-mipad2-jiu-zhuan-shen-qi/</id>
+        <link href="https://www.moxi.ml/post/vol02-di-cheng-ben-shou-ba-shou-zhi-zuo-mipad2-jiu-zhuan-shen-qi/">
+        </link>
+        <updated>2021-07-25T07:12:39.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="前言">前言</h1>
+<p>  前段时间沉迷折腾小米平板2，终于在修改BIOS程序时翻车，平板黑砖不亮屏。由于小米平板2是基于intel X86_64架构，也就是说只要BIOS以及其他硬件没有问题，平板就不会刷死。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="前言">前言</h1>
+<p>  前段时间沉迷折腾小米平板2，终于在修改BIOS程序时翻车，平板黑砖不亮屏。由于小米平板2是基于intel X86_64架构，也就是说只要BIOS以及其他硬件没有问题，平板就不会刷死。</p>
+<!-- more -->
+<p>  那么如果遇到我这种BIOS刷死情况，或者其他BIOS问题导致黑屏、无法启动、进不了BIOS，引导错误等都可以考虑刷写BIOS解决。当然，如果你能够正常进入系统，可以在Windows系统里直接刷写BIOS，这里我就不再赘述。因此我们可以动手制作一个工具来刷写BIOS，接下来进入正文，尝试自己动手一个这样的工具。<br>
+<img src="https://www.moxi.ml/post-images/1627199198138.png" alt="" loading="lazy"></p>
+<h1 id="准备工作">准备工作</h1>
+<p>  CH341A编程器x1，淘宝上10-20元包邮等的都可以入手<br>
+  电烙铁x1，准备好焊锡，这个看个人习惯入手，能做简单的焊接工作就好<br>
+  15cm的杜邦线6根，优点是有颜色便于区分，方便制作，可以多买一些，淘宝3块钱包邮<br>
+  TYPE-C公头测试版x1，淘宝6-7块钱包邮入手，假如和我同样款式那么可以直接抄作业了。<br>
+  *要有一定动手能力<br>
+<img src="https://www.moxi.ml/post-images/1627200992189.png" alt="" loading="lazy"></p>
+<h1 id="动手制作抄作业时间">动手制作（抄作业时间）</h1>
+<p>  可以参考B站 @后9来 的测量方法<a href="https://www.bilibili.com/video/BV1kz4y1Z7mX?from=search&amp;seid=4789187379509959905">点我跳转</a>。或者直接抄我的作业就好了嘿嘿。<br>
+  首先准备好TYPE-C公头测试版和编程器的配件，可以注意到测试板上有对应的编号，两份材料如图所示：<br>
+<img src="https://www.moxi.ml/post-images/1627206853027.png" alt="" loading="lazy"><br>
+接下来我们要用电烙铁进行简单的焊接，焊接的线路图我已经帮你们测试好了，一顿艰难的作图(&gt;﹏&lt;)<br>
+<img src="https://www.moxi.ml/post-images/1627206930715.png" alt="" loading="lazy"></p>
+<h3 id="注意正反两面可能有区别编号要能与我一致">*注意正反两面可能有区别，编号要能与我一致</h3>
+<p>另一边则是编程器配件的焊接图示，注意先将两个黄色配件卡在8个序号对应8个孔内，然后按照下图颜色与上图结合起来焊接，颜色按自己喜欢的就好了，仅供参考。<br>
+<img src="https://www.moxi.ml/post-images/1627207124281.png" alt="" loading="lazy"><br>
+最后装配好编程器，如图即为成品啦～<br>
+<img src="https://www.moxi.ml/post-images/1627207280872.png" alt="" loading="lazy"></p>
+<h1 id="工具食用方法">工具食用方法</h1>
+<p>  同样也可以参考B站 @后9来 的视频教程<a href="https://www.bilibili.com/video/BV1Zf4y147F8">点我跳转</a><br>
+  一般各大淘宝店会在商品描述区放出编程器的驱动和软件，注意一定要安装对应的驱动，软件界面一般如图<br>
+<img src="https://www.moxi.ml/post-images/1627210200871.png" alt="" loading="lazy"><br>
+<img src="https://www.moxi.ml/post-images/1627208319515.jpg" alt="" loading="lazy"><br>
+插入编程器后，此时编程界面右下角设备连接状态处应显示“已连接”。<br>
+<img src="https://www.moxi.ml/post-images/1627209037699.jpg" alt="" loading="lazy"><br>
+我们在软件左侧单机检测按钮，应该会识别出小米平板2的BIOS芯片为W25Q64BV<br>
+<img src="https://www.moxi.ml/post-images/1627209620198.png" alt="" loading="lazy"><br>
+  我们将<a href="https://moxiaoxi233.lanzoui.com/iGen1ru646d">小米平板2原厂BIOS文件</a>，即解压出来的&quot;Mipad2bios.bin&quot;拖拽到软件内或者在工具栏中选择打开按钮，选择下载解压得到的bin文件。<br>
+  随后在软件上方先后进行“读取”操作，随后再次进行“擦除”操作，分别待左下角进度条走完后，再次进行“查空”操作，软件会显示“芯片是空白的”字样。<br>
+  接下来我们点击“编程”按钮，左下角进度条会再次读条，可能要3-6分钟左右的时间，读条走完后，我们点击“校验”，提示“芯片已经编程并校验成功”。<br>
+<img src="https://www.moxi.ml/post-images/1627209940917.png" alt="" loading="lazy"><br>
+  拔下编程器，平板会自动上电开机，如果还是黑屏，充20分钟的电即可，可以观察正面呼吸灯是否亮起。此时我们就刷写成功啦，enjoy～</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vol.01 MiPad2 双系统引导界面美化篇]]></title>
         <id>https://www.moxi.ml/post/Vol_01_MiPad2_PowerOn/</id>
