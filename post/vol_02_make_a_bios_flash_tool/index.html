@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Vol.01 MiPad2 双系统引导界面美化篇 | Xi‘s Notes</title>
+<title>Vol.02 图文带你手把手制作MiPad2救砖神器 | Xi‘s Notes</title>
 
 <link rel="shortcut icon" href="https://www.moxi.ml/favicon.ico?v=1627210822062">
 
@@ -89,48 +89,52 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    Vol.01 MiPad2 双系统引导界面美化篇
+                    Vol.02 图文带你手把手制作MiPad2救砖神器
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2021-07-24 ·
+                        · 2021-07-25 ·
                     </time>
-                    
-                        <a href="https://www.moxi.ml/tag/MzWRFHsvA/" class="post-tags">
-                            # 折腾
-                        </a>
-                    
-                        <a href="https://www.moxi.ml/tag/A0lJDS5vB/" class="post-tags">
-                            # 美化
-                        </a>
                     
                 </div>
                 <div class="post-content">
                     <h1 id="前言">前言</h1>
-<p>  将砖掉了的平板给救了回来，于是又开始了折腾的不归路......正好早就沉迷于各种数码的美化中，索性来折腾一下我的小米平板2。</p>
+<p>  前段时间沉迷折腾小米平板2，终于在修改BIOS程序时翻车，平板黑砖不亮屏。由于小米平板2是基于intel X86_64架构，也就是说只要BIOS以及其他硬件没有问题，平板就不会刷死。</p>
 <!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://www.moxi.ml/post-images/1627104776266.png" alt="" loading="lazy"></figure>
-<h1 id="双系统的安装">双系统的安装</h1>
-<p>  采用了 (@果壳里的星辰) 公众号制作的双系统刷机包，这里强烈推荐使用他制作的刷机包，相较于比较过时的那些早期双系统作品，这份方案更完善，以及解决了许多问题。<br>
-  这里我们选择Miui+Win的组合方案，因为个人比较依赖小米账户的云同步功能(´･ω･`)</p>
-<h1 id="美化修改思路">美化修改思路</h1>
-<p>  由于这套双系统引导方案采用的是rEFInd的引导方式，<a href="https://www.rodsbooks.com/refind/themes.html">rEFInd官方Wiki</a>中有介绍到主题与美化的设计。</p>
-<blockquote>
-<p>You can adjust the sizes of icons by using the big_icon_size and small_icon_size tokens in refind.conf. These tokens adjust the size of the first-row OS and second-row tool icons, respectively. The big_icon_size option also indirectly sets the disk-type badge size; badges have sides that are 1/4 the size of OS icons. The icons provided with rEFInd are 128x128 for OS icons, 48x48 for tools, and 32x32 for badges.</p>
-</blockquote>
-<p>  因此我自己设计了两套图标包，其中预览效果如下：<br>
-<img src="https://www.moxi.ml/post-images/1627117092567.png" alt="" loading="lazy"></p>
-<h3 id="左侧图标名为greyline右侧图标名为color">*左侧图标名为GreyLine，右侧图标名为Color</h3>
-<p>*两款图标均为个人原创设计，照顾到米板2的2k屏幕，图标分辨率大小翻倍，因此相比rEFInd自带的图标要更加清晰。</p>
-<h1 id="食用方法">食用方法</h1>
-<p>  假如你和我一样采用的是(@果壳里的星辰)的刷机包，可以采用我制作的卡刷包，首先下载你喜欢的美化包：下载地址：<a href="https://moxiaoxi233.lanzoui.com/iW2gvrsxnhi">GreyLine卡刷包</a>或<a href="https://moxiaoxi233.lanzoui.com/i5rI8rsxnvc">Color卡刷包</a>，然后进入安卓TWRP（Recovery），卡刷对应的zip包文件，再重启平板即完成修改。<br>
-  假如你采用的是早期其他人制作的双系统包，如游戏尘间发布的双系统包，则可能相对麻烦，进入Windows PE，打开DiskGenius软件，找到对应的EFI分区，EFI/boot/icons，将<a href="https://moxiaoxi233.lanzoui.com/irQcDrsxjzc">GreyLine图标包</a>或<a href="https://moxiaoxi233.lanzoui.com/isLn5rsxhlg">Color图标包</a>解压，将图片全部复制到该目录即可。随后返回EFI/boot目录，用文本编辑器打开refind.conf，在文档的末尾处增加如下语句：</p>
-<pre><code>selection_big \EFI\boot\icons\selection_big.png
-selection_small \EFI\boot\icons\selection_small.png
-</code></pre>
-<p>  最后重启平板即可</p>
-<h3 id="注两种双系统包下载的文件是不同的注意不要混淆-如有疑问或更多建议欢迎联系我~">*注：两种双系统包下载的文件是不同的，注意不要混淆。如有疑问或更多建议，欢迎联系我～</h3>
-<p>  到此即全文结束，享受焕然一新的系统引导界面吧！</p>
+<p>  那么如果遇到我这种BIOS刷死情况，或者其他BIOS问题导致黑屏、无法启动、进不了BIOS，引导错误等都可以考虑刷写BIOS解决。当然，如果你能够正常进入系统，可以在Windows系统里直接刷写BIOS，这里我就不再赘述。因此我们可以动手制作一个工具来刷写BIOS，接下来进入正文，尝试自己动手一个这样的工具。<br>
+<img src="https://www.moxi.ml/post-images/1627199198138.png" alt="" loading="lazy"></p>
+<h1 id="准备工作">准备工作</h1>
+<p>  CH341A编程器x1，淘宝上10-20元包邮等的都可以入手<br>
+  电烙铁x1，准备好焊锡，这个看个人习惯入手，能做简单的焊接工作就好<br>
+  15cm的杜邦线6根，优点是有颜色便于区分，方便制作，可以多买一些，淘宝3块钱包邮<br>
+  TYPE-C公头测试版x1，淘宝6-7块钱包邮入手，假如和我同样款式那么可以直接抄作业了。<br>
+  *要有一定动手能力<br>
+<img src="https://www.moxi.ml/post-images/1627200992189.png" alt="" loading="lazy"></p>
+<h1 id="动手制作抄作业时间">动手制作（抄作业时间）</h1>
+<p>  可以参考B站 @后9来 的测量方法<a href="https://www.bilibili.com/video/BV1kz4y1Z7mX?from=search&amp;seid=4789187379509959905">点我跳转</a>。或者直接抄我的作业就好了嘿嘿。<br>
+  首先准备好TYPE-C公头测试版和编程器的配件，可以注意到测试板上有对应的编号，两份材料如图所示：<br>
+<img src="https://www.moxi.ml/post-images/1627206853027.png" alt="" loading="lazy"><br>
+接下来我们要用电烙铁进行简单的焊接，焊接的线路图我已经帮你们测试好了，一顿艰难的作图(&gt;﹏&lt;)<br>
+<img src="https://www.moxi.ml/post-images/1627206930715.png" alt="" loading="lazy"></p>
+<h3 id="注意正反两面可能有区别编号要能与我一致">*注意正反两面可能有区别，编号要能与我一致</h3>
+<p>另一边则是编程器配件的焊接图示，注意先将两个黄色配件卡在8个序号对应8个孔内，然后按照下图颜色与上图结合起来焊接，颜色按自己喜欢的就好了，仅供参考。<br>
+<img src="https://www.moxi.ml/post-images/1627207124281.png" alt="" loading="lazy"><br>
+最后装配好编程器，如图即为成品啦～<br>
+<img src="https://www.moxi.ml/post-images/1627207280872.png" alt="" loading="lazy"></p>
+<h1 id="工具食用方法">工具食用方法</h1>
+<p>  同样也可以参考B站 @后9来 的视频教程<a href="https://www.bilibili.com/video/BV1Zf4y147F8">点我跳转</a><br>
+  一般各大淘宝店会在商品描述区放出编程器的驱动和软件，注意一定要安装对应的驱动，软件界面一般如图<br>
+<img src="https://www.moxi.ml/post-images/1627210200871.png" alt="" loading="lazy"><br>
+<img src="https://www.moxi.ml/post-images/1627208319515.jpg" alt="" loading="lazy"><br>
+插入编程器后，此时编程界面右下角设备连接状态处应显示“已连接”。<br>
+<img src="https://www.moxi.ml/post-images/1627209037699.jpg" alt="" loading="lazy"><br>
+我们在软件左侧单机检测按钮，应该会识别出小米平板2的BIOS芯片为W25Q64BV<br>
+<img src="https://www.moxi.ml/post-images/1627209620198.png" alt="" loading="lazy"><br>
+  我们将<a href="https://moxiaoxi233.lanzoui.com/iGen1ru646d">小米平板2原厂BIOS文件</a>，即解压出来的&quot;Mipad2bios.bin&quot;拖拽到软件内或者在工具栏中选择打开按钮，选择下载解压得到的bin文件。<br>
+  随后在软件上方先后进行“读取”操作，随后再次进行“擦除”操作，分别待左下角进度条走完后，再次进行“查空”操作，软件会显示“芯片是空白的”字样。<br>
+  接下来我们点击“编程”按钮，左下角进度条会再次读条，可能要3-6分钟左右的时间，读条走完后，我们点击“校验”，提示“芯片已经编程并校验成功”。<br>
+<img src="https://www.moxi.ml/post-images/1627209940917.png" alt="" loading="lazy"><br>
+  拔下编程器，平板会自动上电开机，如果还是黑屏，充20分钟的电即可，可以观察正面呼吸灯是否亮起。此时我们就刷写成功啦，enjoy～</p>
 
                 </div>
             </article>
@@ -139,8 +143,8 @@ selection_small \EFI\boot\icons\selection_small.png
         
             <div class="next-post">
                 <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://www.moxi.ml/post/See-You-Again/" class="post-title gt-a-link">
-                    分别★
+                <a href="https://www.moxi.ml/post/Vol_01_MiPad2_PowerOn/" class="post-title gt-a-link">
+                    Vol.01 MiPad2 双系统引导界面美化篇
                 </a>
             </div>
         
