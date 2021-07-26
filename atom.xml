@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.moxi.ml</id>
     <title>Xi‘s Notes</title>
-    <updated>2021-07-26T06:56:34.598Z</updated>
+    <updated>2021-07-26T06:59:05.748Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.moxi.ml"/>
     <link rel="self" href="https://www.moxi.ml/atom.xml"/>
@@ -56,8 +56,8 @@
   在软件左侧单击检测按钮，应该会识别出小米平板2的BIOS芯片为W25Q64BV<br>
 <img src="https://www.moxi.ml/post-images/1627209620198.png" alt="" loading="lazy"><br>
   我们将<a href="https://moxiaoxi233.lanzoui.com/iGen1ru646d">小米平板2原厂BIOS文件</a>，即解压出来的&quot;Mipad2bios.bin&quot;拖拽到软件内或者在工具栏中选择打开按钮，选择下载解压得到的bin文件。<br>
-  随后在软件上方先后进行“读取”操作，随后再次进行“擦除”操作，分别待左下角进度条走完后，再次进行“查空”操作，软件会显示“芯片是空白的”字样。<br>
-  接下来我们点击“编程”按钮，左下角进度条会再次读条，可能要3-6分钟左右的时间，读条走完后，我们点击“校验”，提示“芯片已经编程并校验成功”。<br>
+  随后在软件上方先后进行“读取”操作，随后再次进行“擦除”操作，分别待左下角进度条走完后，再次进行“查空”操作，软件会显示“芯片是空白的”字样。</p>
+<p>  接下来我们点击“编程”按钮，左下角进度条会再次读条，可能要3-6分钟左右的时间，读条走完后，我们点击“校验”，提示“芯片已经编程并校验成功”。<br>
 <img src="https://www.moxi.ml/post-images/1627209940917.png" alt="" loading="lazy"><br>
   拔下编程器，平板会自动上电开机，如果还是黑屏，充20分钟的电即可，可以观察正面呼吸灯是否亮起。此时我们就刷写成功啦，enjoy～</p>
 ]]></content>
