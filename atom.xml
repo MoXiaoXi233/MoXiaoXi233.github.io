@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.moxi.ml</id>
     <title>Xi‘s Notes</title>
-    <updated>2021-07-26T06:51:08.792Z</updated>
+    <updated>2021-07-26T06:56:34.598Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.moxi.ml"/>
     <link rel="self" href="https://www.moxi.ml/atom.xml"/>
@@ -23,18 +23,18 @@
 <p>  前段时间沉迷折腾小米平板2，终于在修改BIOS程序时翻车，平板黑砖不亮屏。由于小米平板2是基于intel X86_64架构，也就是说在BIOS以及其他硬件没有问题的情况下，平板2基本就不会刷死。</p>
 <!-- more -->
 <p>  那么如果遇到我这种BIOS刷死情况，或者其他BIOS问题导致黑屏、无法启动、进不了BIOS，引导错误等都可以考虑刷写BIOS解决。当然，如果你能够正常进入系统，可以在Windows系统里直接刷写BIOS，这里我就不再赘述。</p>
-<p>  根据小米平板2的原理图纸我们得知，设计师们在设计时这款平板的时候就考虑到了BIOS芯片的刷写问题，他们在type-c接口里设计了相应的接口，也就是说只要我们能够找到这些接口，就能通过编程器对bios芯片进行烧写操作。<br>
-  因此我们可以动手制作一个工具来刷写BIOS，接下来让我们自己动手制作一个这样的工具。<br>
+<p>  根据小米平板2的原理图纸我们得知，设计师们在设计时这款平板的时候就考虑到了BIOS芯片的刷写问题，他们在type-c接口里设计了相应的接口，也就是说只要我们能够找到这些接口，就能通过编程器对bios芯片进行烧写操作。</p>
+<p>  因此，我们可以动手制作一个工具来刷写BIOS，接下来让我们自己动手制作一个这样的工具。<br>
 <img src="https://www.moxi.ml/post-images/1627199198138.png" alt="" loading="lazy"></p>
 <h1 id="准备工作">准备工作</h1>
 <p>  CH341A编程器x1，淘宝上10-20元包邮等的都可以入手<br>
   电烙铁x1，准备好焊锡，这个看个人习惯入手，能做简单的焊接工作就好<br>
   15cm的杜邦线6根，优点是有颜色便于区分，方便制作，可以多买一些，淘宝3块钱包邮<br>
   TYPE-C公头测试版x1，淘宝6-7块钱包邮入手，假如和我同样款式那么可以直接抄作业了。<br>
-  *要有一定动手能力<br>
+  *要有一定动手能力🌚<br>
 <img src="https://www.moxi.ml/post-images/1627200992189.png" alt="" loading="lazy"></p>
 <h1 id="动手制作抄作业时间">动手制作（抄作业时间）</h1>
-<p>  可以参考B站 @后9来 的测量方法<a href="https://www.bilibili.com/video/BV1kz4y1Z7mX?from=search&amp;seid=4789187379509959905">点我跳转</a>。或者直接抄我的作业就好了嘿嘿。<br>
+<p>  参考B站 @后9来 的测量方法<a href="https://www.bilibili.com/video/BV1kz4y1Z7mX?from=search&amp;seid=4789187379509959905">点我跳转</a>。或者直接抄我的作业就好了嘿嘿。<br>
   首先准备好TYPE-C公头测试版和编程器的配件，可以注意到测试板上有对应的编号，两份材料如图所示：<br>
 <img src="https://www.moxi.ml/post-images/1627206853027.png" alt="" loading="lazy"><br>
 接下来我们要用电烙铁进行简单的焊接，焊接的线路图我已经帮你们测试好了，一顿艰难的作图(&gt;﹏&lt;)<br>
